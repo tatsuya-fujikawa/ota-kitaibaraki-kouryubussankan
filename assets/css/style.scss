@@ -84,6 +84,32 @@ img {
   background-color: #ffe4eb;
 }
 
+.pt10 {
+  padding-top: 10px;
+}
+.pt20 {
+  padding-top: 20px;;
+}
+.pb10 {
+  padding-bottom: 10px;
+}
+.pb20 {
+  padding-bottom: 20px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+
 @media print, screen and (min-width: 769px) {
   .font-size--S {
     font-size: 1.4em;
@@ -1698,9 +1724,20 @@ section.recommend{
 }
 
 
+/*----------------about----------------*/
 
+.whole-wrapper.about .flag {
+  background-color: #f6fbfa;
+}
 
+.whole-wrapper.about .flag .text {
+  font-weight: bold;
+  padding-bottom: 80px;
+}
 
+.whole-wrapper.about .sub-visual {
+  margin-top: -50px;
+}
 
 
 
