@@ -763,6 +763,29 @@ NEWSエリア ↓↓↓↓↓↓
 /*============
 summary ↓↓↓↓↓↓
 ==============*/
+.bottom {
+  position: relative;
+  height: 10vh;
+}
+
+.bottom-picture {
+  position: absolute;
+  bottom: -10px;
+}
+
+@media print, screen and (min-width: 769px) {
+  .bottom {
+    height: 28vh;
+  }
+  .bottom-picture {
+    position: absolute;
+    bottom: -25px;
+  }
+}
+
+/*============
+summary ↓↓↓↓↓↓
+==============*/
 /*
 &__bg-gray {
 margin: 50px auto;
