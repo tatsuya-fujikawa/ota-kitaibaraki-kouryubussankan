@@ -1724,22 +1724,129 @@ section.recommend{
 }
 
 
-/*----------------about----------------*/
+/*----------------kouryubussankan----------------*/
 
-.whole-wrapper.about .flag {
+.whole-wrapper.kouryubussankan .flag {
   background-color: #f6fbfa;
 }
 
-.whole-wrapper.about .flag .text {
+.whole-wrapper.kouryubussankan .flag .text {
   font-weight: bold;
   padding-bottom: 80px;
 }
 
-.whole-wrapper.about .sub-visual {
+.whole-wrapper.kouryubussankan .sub-visual {
   margin-top: -50px;
 }
 
+.whole-wrapper.kouryubussankan .flex-wrapper ul {
+  display: flex;
+}
 
+.whole-wrapper.kouryubussankan .card {
+  background-color: #fbf075;
+}
+
+.whole-wrapper.kouryubussankan .card.kouryubussankan .flex-wrapper ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 50px;
+}
+
+.whole-wrapper.kouryubussankan .card.kouryubussankan .flex-item {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right:0;
+  }
+}
+
+.whole-wrapper.kouryubussankan .card.kouryubussankan .text {
+  padding-top: 55px;
+  margin:0 0 30px;
+}
+
+.whole-wrapper.kouryubussankan .button {
+  background-color: #4f9ad2;
+  border-radius: 7px;
+  text-align: center;
+  width: 90%;
+  margin: 30px auto 10px;
+}
+
+.whole-wrapper.kouryubussankan .button-area .flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+}
+
+.whole-wrapper.kouryubussankan .button a {
+  position: relative;
+  display: block;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  width: 90%;
+
+  &::after {
+    position: absolute;
+    content: '>';
+    display: inline-block;
+    right: 2rem;
+    top: 32%;
+  }
+
+  &::before {
+    position: absolute;
+    top: 28%;
+    left: 1.1em;
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/kouryubussankan/icon01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+  }
+}
+
+.whole-wrapper.kouryubussankan .button.button-access a {
+  &::before {
+    background-image: url(../img/kouryubussankan/icon02.png);
+  }
+}
+
+.whole-wrapper.kouryubussankan .bottom::after {
+  content: '';
+  position: absolute;
+  background-color: #1876bb;
+  height: 30px;
+  width: 100vw;
+  bottom: 0;
+  z-index: -10;
+}
+
+@media print, screen and (min-width: 769px) {
+  
+  .whole-wrapper.kouryubussankan .button {
+    max-width: 460px;
+    margin: 45px auto 100px;
+  }
+  .whole-wrapper.kouryubussankan .button a {
+    width: 460px;
+    padding-top: 37px;
+    padding-bottom: 37px;
+    padding-left: 50px;
+
+    &::before {
+      width: 90px;
+    }
+  }
+
+}
 
 
 /*# sourceMappingURL=style.css.map */
