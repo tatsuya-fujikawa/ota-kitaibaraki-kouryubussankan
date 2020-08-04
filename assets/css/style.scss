@@ -1659,10 +1659,11 @@ section.recommend{
 }
 /*----------------syokuniku----------------*/
 .main-visual.syokuniku {
-  // background: url(../img/syokuniku/syokuniku.bg.png);
-  background-size: contain;
-  margin: 0 auto;
-
+  background: url(../img/syokuniku/syokuniku-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 45vh;
+  width: 100%;
 }
 
 .main-visual.syokuniku h2 img {
@@ -1748,6 +1749,11 @@ section.recommend{
 }
 
 @media print, screen and (min-width: 769px) {
+
+.lead.syokuniku .main-visual__description {
+  margin: 0 auto 30px;
+  padding-top: 40px;
+}
 
 .lead.syokuniku {
     .main-visual__description {
