@@ -67,12 +67,24 @@ img {
   color: #bd243d;
 }
 
+.col-green {
+  color: #317f54;
+}
+
 .col-white {
   color: #ffffff;
 }
 
 .col-brown {
   color: #a64301;
+}
+
+.col-blue {
+  color: #021a73;
+}
+
+.col-yellow {
+  color: #fff7b3;
 }
 
 .bg-col-blue {
@@ -271,7 +283,7 @@ header ↓↓↓↓↓↓
   align-items: center;
 }
 
-.header-nav2 {
+.whole-wrapper.top-page.header-nav2 {
   background: url(../img/slide-area-bg.jpg);
   background-size: contain;
   width: 100%;
@@ -556,7 +568,7 @@ NEWSエリア ↓↓↓↓↓↓
 }
 
 .news-sidebar--line {
-  width: 95%;
+  width: 65%;
   text-align: center;
   margin: 0 auto;
 }
@@ -615,6 +627,9 @@ NEWSエリア ↓↓↓↓↓↓
   }
   .news-sidebar--text {
     padding: 5px;
+  }
+  .news-sidebar--line {
+    width: 95%;
   }
   .news-sidebar--line p {
     font-size: 1.7 0.71rem;
@@ -1479,6 +1494,51 @@ footer ↓↓↓↓↓↓
   .footer__img, .footer__copy-write {
     width: 100vw;
   }
+  .footer .nav {
+    padding: 70px 0 0;
+  }
+  .footer .nav .list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 30px;
+  }
+  .footer .nav .list .list-item {
+    margin: 0;
+    width: auto;
+  }
+  .footer .info {
+    max-width: 1000px;
+    margin: 20px auto 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer .info .info__address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer .info .info__address .f_logo {
+    width: 100%;
+  }
+  .footer .info .info__address .text {
+    margin: 0 0 0 15px;
+  }
+  .footer .info .list {
+    width: 400px;
+  }
+  .footer .info .list .text {
+    margin-top: 0;
+  }
+  .footer .info .tel {
+    font-size: 8px;
+    text-align: right;
+    margin-right: 23px;
+  }
 }
 
 .lead .leadImage, .recommend .list__img {
@@ -1597,13 +1657,34 @@ section.recommend {
   background: url(../img/syokuniku/syokuniku-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 45vh;
+  height: 40vh;
   width: 100%;
+  position: relative;
+}
+
+.main-visual.syokuniku .sub-visual {
+  position: absolute;
+  max-width: 850px;
+  width: 100%;
+  margin: 0 auto;
+  top: 71%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 0;
 }
 
 .main-visual.syokuniku h2 img {
   margin: 0 auto;
-  width: 250px;
+  max-width: 230px;
+  z-index: 1;
+  position: relative;
+}
+
+.lead.syokuniku .main-visual__description {
+  margin: 0 auto;
+  padding-top: 40px;
 }
 
 .lead.syokuniku figcaption .text:nth-child(2) {
@@ -1692,6 +1773,15 @@ section.recommend {
 }
 
 @media print, screen and (min-width: 769px) {
+  .main-visual.syokuniku h2 img {
+    max-width: 320px;
+  }
+  .main-visual.syokuniku {
+    height: 60vh;
+  }
+  .main-visual.syokuniku .sub-visual {
+    top: 52%;
+  }
   .lead.syokuniku .main-visual__description {
     margin: 0 auto 30px;
     padding-top: 40px;
@@ -2065,6 +2155,641 @@ section.recommend {
   }
   .whole-wrapper.toretate .topics .category .list .list__item a::after {
     top: 44%;
+  }
+}
+
+/*----------------seika----------------*/
+.main-visual.seika {
+  background: url(../img/seika/seika-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 26vh;
+  position: relative;
+}
+
+.main-visual.seika .sub-visual {
+  position: absolute;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  top: 83%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.main-visual.seika h2 img {
+  margin: 0 auto;
+  max-width: 230px;
+  z-index: 1;
+  position: relative;
+}
+
+.lead.seika .main-visual__description {
+  margin: 0 auto;
+}
+
+.lead.seika .main-visual__description {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.lead.seika figcaption .text:nth-child(2) {
+  margin: 0;
+  padding: 10px 0 20px;
+}
+
+.lead.seika, .topics.seika {
+  background-color: #d3a776;
+  background-image: url(../img/seika/seika_bg.png);
+  margin-bottom: 0;
+}
+
+.recommend.seika {
+  margin-bottom: 0;
+}
+
+.main-visual.seika .main-visual__description {
+  margin-bottom: 0;
+}
+
+.recommend.seika {
+  background-color: #fbf7f3;
+  background-image: url(../img/syokuniku_bg.png);
+}
+
+.recommend.seika .title {
+  content: '';
+  width: 100%;
+  height: 160px;
+  background-image: url(../img/seika/seika_title_01_bg.png);
+  background-size: cover;
+  background-position: bottom;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.recommend.seika .title .ttl_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.topics.seika {
+  margin-bottom: 0;
+}
+
+.topics.seika .title {
+  content: '';
+  width: 100%;
+  height: 95px;
+  background-image: url(../img/seika/seika_title_02_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 1em;
+  padding-top: 15px;
+  margin-bottom: 55px;
+}
+
+@media print, screen and (min-width: 769px) {
+  .main-visual.seika h2 img {
+    max-width: 360px;
+  }
+  .main-visual.seika {
+    height: 55vh;
+  }
+  .main-visual.seika .sub-visual {
+    top: 68%;
+  }
+  .lead.seika .main-visual__description {
+    margin: 0 auto 30px;
+    padding-top: 90px;
+  }
+  .lead.seika .main-visual__description {
+    font-size: 26px;
+  }
+  .lead.seika figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 90px;
+  }
+  .lead.seika figcaption {
+    padding: 7px;
+  }
+  .topics.seika .list .list__item img {
+    max-width: 50%;
+    margin: 0 auto 15px;
+  }
+  .topics.seika .list .list__item .text {
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+    width: 95%;
+    margin: 0 auto 30px;
+  }
+  .topics.seika .title {
+    padding-top: 125px;
+    height: 410px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 14em;
+  }
+  .topics.seika .title img {
+    width: 200px;
+  }
+  .topics.seika .inner .detail .list .list__item:first-child {
+    margin-top: -70px;
+  }
+  .topics.seika .inner .inner {
+    margin-top: -70px;
+  }
+  .topics.seika .category {
+    margin: 40px 0 40px;
+  }
+  .topics.seika .list.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .topics.seika .list.flex .list__item {
+    width: 300px;
+  }
+  .topics.seika .list.flex .list__item a::before {
+    top: -7%;
+  }
+  .recommend.seika .list {
+    padding-top: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .recommend.seika dl {
+    display: block;
+  }
+  .recommend.seika .list__img {
+    width: 97%;
+  }
+  .recommend.seika dt {
+    text-align: center;
+    font-size: 20px;
+  }
+  .recommend.seika dd {
+    width: 95%;
+  }
+  .recommend.seika .title img {
+    width: 300px;
+  }
+  .recommend.seika .title {
+    height: 220px;
+  }
+}
+
+/*----------------suisan----------------*/
+.main-visual.suisan {
+  background: url(../img/suisan/suisan-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 26vh;
+  position: relative;
+}
+
+.main-visual.suisan .sub-visual {
+  position: absolute;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.main-visual.suisan h2 img {
+  margin: 0 auto;
+  max-width: 230px;
+  z-index: 1;
+  position: relative;
+}
+
+.lead.suisan .main-visual__description {
+  margin: 0 auto;
+}
+
+.lead.suisan .main-visual__description {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.lead.suisan figcaption .text:nth-child(2) {
+  margin: 0;
+  padding: 10px 0 20px;
+}
+
+.lead.suisan, .topics.suisan {
+  background-color: #d3a776;
+  background-image: url(../img/suisan/suisan_bg.png);
+  margin-bottom: 0;
+}
+
+.recommend.suisan {
+  margin-bottom: 0;
+}
+
+.main-visual.suisan .main-visual__description {
+  margin-bottom: 0;
+}
+
+.recommend.suisan {
+  background-color: #c4dbf8;
+  background-image: url(../img/syokuniku_bg.png);
+}
+
+.recommend.suisan .title {
+  content: '';
+  width: 100%;
+  height: 160px;
+  background-image: url(../img/suisan/suisan_title_01_bg.png);
+  background-size: cover;
+  background-position: bottom;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.recommend.suisan .title .ttl_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.recommend.suisan .title .ttl_icon {
+  width: 150px;
+  height: 120px;
+  position: absolute;
+  left: 8%;
+  top: 10%;
+}
+
+.recommend.suisan .title .ttl_icon:nth-child(2) {
+  left: 54%;
+}
+
+.topics.suisan {
+  margin-bottom: 0;
+}
+
+.topics.suisan .title {
+  content: '';
+  width: 100%;
+  height: 95px;
+  background-image: url(../img/suisan/suisan_title_02_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 15px;
+  margin-bottom: 55px;
+}
+
+@media print, screen and (min-width: 769px) {
+  .main-visual.suisan h2 img {
+    max-width: 360px;
+  }
+  .main-visual.suisan {
+    height: 55vh;
+  }
+  .main-visual.suisan .sub-visual {
+    top: 50%;
+  }
+  .lead.suisan .main-visual__description {
+    margin: 0 auto 30px;
+    padding-top: 90px;
+  }
+  .lead.suisan .main-visual__description {
+    font-size: 26px;
+  }
+  .lead.suisan figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 90px;
+  }
+  .lead.suisan figcaption {
+    padding: 7px;
+  }
+  .topics.suisan .list .list__item img {
+    max-width: 50%;
+    margin: 0 auto 15px;
+  }
+  .topics.suisan .list .list__item .text {
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+    width: 95%;
+    margin: 0 auto 30px;
+  }
+  .topics.suisan .title {
+    padding-top: 125px;
+    height: 410px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 3em;
+  }
+  .topics.suisan .title img {
+    width: 200px;
+  }
+  .topics.suisan .inner .detail .list .list__item:first-child {
+    margin-top: -70px;
+  }
+  .topics.suisan .inner .inner {
+    margin-top: -70px;
+  }
+  .topics.suisan .category {
+    margin: 40px 0 40px;
+  }
+  .topics.suisan .list.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .topics.suisan .list.flex .list__item {
+    width: 300px;
+  }
+  .topics.suisan .list.flex .list__item a::before {
+    top: -7%;
+  }
+  .recommend.suisan .list {
+    padding-top: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .recommend.suisan dl {
+    display: block;
+  }
+  .recommend.suisan .list__img {
+    width: 97%;
+  }
+  .recommend.suisan dt {
+    text-align: center;
+    font-size: 20px;
+  }
+  .recommend.suisan dd {
+    width: 95%;
+  }
+  .recommend.suisan .title img {
+    width: 400px;
+  }
+  .recommend.suisan .title {
+    height: 220px;
+  }
+  .recommend.suisan .title .ttl_icon {
+    width: 451px;
+    height: 288px;
+    position: absolute;
+    left: 2%;
+    top: -28%;
+  }
+  .recommend.suisan .title .ttl_icon:nth-child(2) {
+    right: -70%;
+    left: 0;
+  }
+  .topics.suisan .title {
+    background-position: center 4em;
+  }
+}
+
+/*----------------syokuji----------------*/
+.main-visual.syokuji {
+  background: url(../img/syokuji/syokuji-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 26vh;
+  position: relative;
+}
+
+.main-visual.syokuji .sub-visual {
+  position: absolute;
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.main-visual.syokuji h2 img {
+  margin: 0 auto;
+  max-width: 230px;
+  z-index: 1;
+  position: relative;
+}
+
+.lead.syokuji {
+  color: #fff;
+}
+
+.lead.syokuji .main-visual__description {
+  margin: 0 auto;
+}
+
+.lead.syokuji .main-visual__description {
+  text-align: center;
+  padding-top: 90px;
+}
+
+.lead.syokuji figcaption .text:nth-child(2) {
+  margin: 0;
+  padding: 10px 0 20px;
+}
+
+.lead.syokuji, .topics.syokuji {
+  background-color: #4b0000;
+  background-image: url(../img/syokuji/syokuji_bg.png);
+  margin-bottom: 0;
+}
+
+.recommend.syokuji {
+  margin-bottom: 0;
+}
+
+.main-visual.syokuji .main-visual__description {
+  margin-bottom: 0;
+}
+
+.menu.syokuji {
+  background-color: #b79999;
+  margin-bottom: 0;
+}
+
+.menu.syokuji .title {
+  content: '';
+  width: 100%;
+  height: 160px;
+  background-image: url(../img/syokuji/syokuji_title_01_bg.png);
+  background-size: cover;
+  background-position: bottom;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.menu.syokuji .title .ttl_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.menu.syokuji img {
+  width: 95%;
+}
+
+.topics.syokuji {
+  margin-bottom: 0;
+}
+
+.topics.syokuji .title {
+  content: '';
+  width: 100%;
+  height: 95px;
+  background-image: url(../img/syokuji/syokuji_title_02_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 1em;
+  padding-top: 15px;
+  margin-bottom: 55px;
+}
+
+.topics.syokuji .title img {
+  width: 105px;
+}
+
+.menu.syokuji .table__box img {
+  margin: 0 auto;
+}
+
+.menu.syokuji .table__box .table__box-text {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.menu.syokuji .table__box .table__box-text .table__box-title {
+  padding: 15px;
+  font-size: 20px;
+}
+
+.menu.syokuji .table__box .table__box-text table {
+  margin: 0 auto;
+  padding-bottom: 20px;
+  width: 95%;
+}
+
+.menu.syokuji .table__box .table__box-text td {
+  padding: 7px 3px;
+  border-top: 1px solid #383434;
+}
+
+.menu.syokuji .table__box .table__box-text td:last-child {
+  border-bottom: 1px solid #383434;
+}
+
+.menu.syokuji .table__box .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media print, screen and (min-width: 769px) {
+  .main-visual.syokuji h2 img {
+    max-width: 360px;
+  }
+  .main-visual.syokuji {
+    height: 60vh;
+  }
+  .main-visual.syokuji .sub-visual {
+    top: 75%;
+  }
+  .lead.syokuji .main-visual__description {
+    margin: 0 auto 30px;
+    padding-top: 90px;
+  }
+  .lead.syokuji .main-visual__description {
+    font-size: 26px;
+  }
+  .lead.syokuji figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 90px;
+  }
+  .lead.syokuji figcaption {
+    padding: 7px;
+  }
+  .topics.syokuji .list .list__item img {
+    max-width: 50%;
+    margin: 0 auto 15px;
+  }
+  .topics.syokuji .list .list__item .text {
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+    width: 95%;
+    margin: 0 auto 30px;
+  }
+  .topics.syokuji .title {
+    padding-top: 125px;
+    height: 410px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 14em;
+  }
+  .topics.syokuji .title img {
+    width: 200px;
+  }
+  .topics.syokuji .inner .detail .list .list__item:first-child {
+    margin-top: -70px;
+  }
+  .topics.syokuji .inner .inner {
+    margin-top: -70px;
+  }
+  .topics.syokuji .category {
+    margin: 40px 0 40px;
+  }
+  .topics.syokuji .list.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .topics.syokuji .list.flex .list__item {
+    width: 300px;
+  }
+  .topics.syokuji .list.flex .list__item a::before {
+    top: -7%;
+  }
+  .menu.syokuji .title img {
+    width: 90%;
+  }
+  .menu.syokuji .title {
+    height: 220px;
   }
 }
 /*# sourceMappingURL=style.css.map */
