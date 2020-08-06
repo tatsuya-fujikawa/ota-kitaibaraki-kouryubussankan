@@ -97,13 +97,19 @@ img {
   padding-top: 10px;
 }
 .pt20 {
-  padding-top: 20px;;
+  padding-top: 20px;
+}
+.pt50 {
+  padding-top: 50px;
 }
 .pb10 {
   padding-bottom: 10px;
 }
 .pb20 {
   padding-bottom: 20px;
+}
+.pb50 {
+  padding-bottom: 50px;
 }
 
 .mt10 {
@@ -538,7 +544,8 @@ NEWSエリア ↓↓↓↓↓↓
 }
 
 .news-sidebar--red {
-  margin: 15px 3px;
+  width: 85%;
+  margin: 15px auto ;
   background-color: red;
   color: white;
   font-weight: bold;
@@ -2502,13 +2509,13 @@ section.recommend{
   margin-bottom: 0;
 }
 .recommend.suisan{
-  background-color: #c4dbf8;  
+  background-color: #c4dbf8;
  background-image: url(../img/syokuniku_bg.png);
  .title{
-  content: ''; 
+  content: '';
   width: 100%;
-  height: 160px;   
-  background-image: url(../img/suisan/suisan_title_01_bg.png);  
+  height: 160px;
+  background-image: url(../img/suisan/suisan_title_01_bg.png);
   background-size: cover;
   background-position: bottom;
   margin-bottom: 20px;
@@ -2901,17 +2908,506 @@ section.recommend{
   }
 }
 
-
 .menu.syokuji .title img {
-  width: 90%;;
+  width: 86%;
 }
 
 .menu.syokuji .title {
   height: 220px;
+}
+
+.menu.syokuji{
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .table__box {
+      width: 48%;
+    }
 
 }
 
 }
+
+/*----------------contact----------------*/
+
+.main-visual.contact .inner h2 img {
+  margin: 100px auto 0;
+  width: 50%;
+}
+
+.whole-wrapper.contact .form-area {
+    form {
+    width: 95%;
+    margin: 50px auto 0;
+    }
+    .item {
+      margin-bottom:30px;
+    
+        .label {
+          display: inline-block;
+          width: 100%;
+          font-size: 16px;
+          padding: 20px 0 20px 20px;
+          background-color: #eeeeee;
+
+          &.must::after {
+            content: '必須';
+            width: 200px;
+            background-color: #c80202;
+            color: #fff;
+            font-weight: bold;
+            padding: 3px 10px;
+            border-radius: 5px;
+            margin-left: 10px;
+          }
+          }
+
+          
+      }
+
+
+      input,textarea {
+          width: 100%;
+          padding:12px;
+          border-radius: 7px;
+          border: 2px solid #eeeeee;
+          margin: 5px 0 7px;
+      }
+
+      textarea {
+          margin-top: 8px;
+      }
+
+
+      input[type="submit"] {
+        margin: 0 auto;
+        display: block;
+        margin-top: 30px;
+        font-size: 16px;
+        font-weight:bold;
+        width: 220px;
+        background-color: #eeeeee;
+        transition:ease 0.3s;
+
+        &:hover {
+          color: #eeeeee;
+          background-color: #021A73;
+          cursor:pointer;
+        }
+      }
+
+}
+
+
+@media print, screen and (min-width: 769px) {
+
+  .main-visual.contact .inner h2 img {
+  width: 35%;
+  }
+  
+    .whole-wrapper.contact .form-area {
+      form {
+      width: 90%;
+      margin: 50px auto;
+      }
+      .item {
+        border-top: 1px solid #bdbdbd;
+        margin-bottom:0;
+
+        &:nth-child(5) {
+          border-bottom: 1px solid #bdbdbd;
+        }
+
+
+        .label {
+          display: inline-block;
+          width: 250px;
+          min-width: 250px;
+          font-size: 16px;
+          padding: 20px 0 20px 20px;
+          background-color: #eeeeee;
+
+          &.label-comment {
+            vertical-align: top;
+            height: 170px;
+          }
+          &.must::after {
+            content: '必須';
+            width: 200px;
+            margin-left: 20px;
+            background-color: #c80202;
+            color: #fff;
+            font-weight: bold;
+            padding: 3px 10px;
+            border-radius: 5px;
+          }
+        }
+
+      }
+      input,textarea {
+          min-width: 350px;
+          width: 350px;
+          padding:10px;
+          border-radius: 7px;
+          border: 2px solid #eeeeee;
+          margin: 5px 0 7px 13px;
+      }
+
+      textarea {
+          margin-top: 8px;
+          min-width: 600px;
+      }
+
+      .inputs {
+        &.email {
+          min-width: 390px;
+        }
+        &.subject {
+          min-width: 600px;
+        }
+      }
+
+      input[type="submit"] {
+        margin: 0 auto;
+        display: block;
+        margin-top: 30px;
+        font-size: 16px;
+        font-weight:bold;
+        width: 220px;
+        background-color: #eeeeee;
+        transition:ease 0.3s;
+
+        &:hover {
+          color: #eeeeee;
+          background-color: #021A73;
+          cursor:pointer;
+        }
+      }
+    }
+}
+
+/*----------------privacypolicy----------------*/
+
+.main-visual.privacypolicy .inner h2 img {
+  margin: 30px auto 0;
+  width: 50%;
+}
+
+.whole-wrapper.privacypolicy p,
+.whole-wrapper.privacypolicy ul >li {
+  font-size: 14px;
+}
+
+.text-wrapper.privacypolicy {
+  margin:50px auto 50px;
+
+  .text-top,.text-box {
+    letter-spacing: 0.2em;
+    line-height: 2.3em;
+    margin-bottom: 30px;
+  }
+
+  .text-top .right {
+    text-align:right;
+    margin-bottom: 20px;
+  }
+  .text-box .text-subtitle {
+    font-size: 18px;
+    background-color: #989898;
+    border-radius: 5px;
+    padding: 10px 0 10px 10px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+}
+
+@media print, screen and (min-width: 769px) {
+  .whole-wrapper.privacypolicy p,
+  .whole-wrapper.privacypolicy ul >li {
+      font-size: 16px;
+  }
+  
+    .main-visual.privacypolicy .inner h2 img {
+      margin: 100px auto 0;
+      width: 35%;
+    }
+    .text-wrapper.privacypolicy {
+      margin:100px 0 50px;
+    }
+
+    .text-wrapper.privacypolicy .text-box .text-subtitle{
+        padding: 10px 0 10px 30px;
+    }
+  
+}
+
+/*----------------shisetu_goannai----------------*/
+
+.main-visual.shisetu_goannai {
+  h2 {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .sub-visual {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.infomation.shisetu_goannai {
+  background-color: #f3f2e9;
+
+  .title{
+    padding: 40px 0 30px;
+    img {
+      width: 110px;
+      margin: auto;
+    }
+  }
+  .osakana {
+    display: none;
+  }
+
+  .card {
+    padding: 20px 0 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .flex-item {
+      width: 31%;
+      padding-right: 10px;
+      padding-bottom: 10px;
+
+      &:nth-of-type(3n) {
+        margin-right: -10px;
+      }
+
+    }
+  }
+
+}
+
+.overview.shisetu_goannai {
+  margin-bottom: 0;
+
+  .title {
+    width: 110px;
+    margin: auto;
+  }
+
+  table {
+    margin: 30px auto 30px;
+    font-size: 12px;
+
+    td {
+      padding: 10px 5px 10px 10px;
+      border-top: 1px solid #a7a7a7;
+
+      &:nth-child(even) {
+        padding: 10px 5px 10px 1px;
+      }
+
+      &:last-child {
+        border-bottom: 1px solid #a7a7a7;
+      }
+      &:nth-last-child(2) {
+        border-bottom: 1px solid #a7a7a7;
+      }
+    }
+  }
+}
+
+@media print, screen and (min-width: 769px) {
+  .main-visual.shisetu_goannai {
+    position: relative;
+      h2 {
+        width: 55%;
+      }
+
+      .sub-visual {
+        position: absolute;
+        width: 300px;
+        top: 0%;
+        right: 3%;
+      }
+  }
+
+  .infomation.shisetu_goannai {
+
+    .map {
+      position: relative;
+    }
+
+    .osakana {
+      position: absolute;
+      display: block;
+      width: 220px;
+      bottom: 2%;
+      right: -5%;
+      }
+    }
+    .card {
+
+    .flex-item {
+
+      &:nth-of-type(3n) {
+        margin-right:0 ;
+      }
+
+    }
+  }
+
+  .overview.shisetu_goannai {
+
+  .br-sp {
+    display: none;
+  }
+
+  .title {
+    width: 140px;
+  }
+  table {
+    width: 100%;
+    font-size: 16px;
+
+
+    td {
+      padding: 15px ;
+      border-top: 1px solid #a7a7a7;
+
+      &:nth-child(odd) {
+        padding-left: 40px;
+      }
+
+      &:last-child {
+        border-bottom: 1px solid #a7a7a7;
+      }
+      &:nth-last-child(2) {
+        border-bottom: 1px solid #a7a7a7;
+      }
+    }
+  }
+  }
+}
+
+/*----------------access----------------*/
+
+.map.access {
+  margin-bottom: 0;;
+}
+
+
+.map.access .btn {
+  background-color: #dfdfdf;
+  height: 150px;
+  position: relative;
+
+
+  p {
+    padding-top: 45px;
+    font-size: 18px;
+    text-align: center;
+    
+    a {
+      background-color: #021a73;
+      padding: 20px 0 20px 65px;
+      display: inline-block;
+      width: 80%;
+      border-radius: 7px;
+
+      &:before {
+        content: '';
+        background-image: url(../img/access/access_icon.png);
+        display:inline-block;
+        width: 49px;
+        height: 41px;
+        position: absolute;
+        left: 16%;
+        top: 35%;
+      }
+    }
+  }
+}
+
+.howto.access {
+  .bg {
+    height: 70px;
+  }
+  background-color: #eef8f9;
+  
+  .transpotation-car, {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 95%;
+    height: 350px;
+    margin: 40px auto 30px;
+    position: relative;
+
+    img {
+      position: absolute;
+      width: 30%;
+      margin: 0 auto;
+      top: -13%;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+    }
+  }
+  .transpotation-public {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 95%;
+    height: 350px;
+    margin: 70px auto 30px;
+    position: relative;
+
+    img {
+      position: absolute;
+      width: 45%;
+      margin: 0 auto;
+      top: -13%;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+    }
+  }
+}
+
+@media print, screen and (min-width: 769px) {
+  .map.access .btn {
+      p {
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        padding-top: 0;
+        font-size: 22px;
+        text-align: center;
+        
+        a {
+          width: 460px;
+          padding: 20px 0 20px 100px;
+
+          &:before {
+            content: '';
+            left: 13%;
+            top: 19%;
+          }
+        }
+      }
+    }
+
+    
+}
+
 
 
 
