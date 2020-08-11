@@ -46,14 +46,14 @@
     </script>
   </head>
   <body>
-    <div class="whole-wrapper">
+    <div class="whole-wrapper recruit">
       <header class="header">
         <div class="header-top">
         <div class="container container--header">
           <p class="header-logo">
             <a class="header-logo__link d-block"
               ><img
-                src="./assets/img/logo.png"
+                src="../assets/img/logo.png"
                 alt="おおた・北茨城交流物産館 バスターミナル駅"
                 class="header-logo__img"
             /></a>
@@ -84,17 +84,17 @@
         </div>
       </header>
 
-      <div class="title">
+      <div class="title recruit">
         <div class="title-recruit">
-          <img src="./assets/img/title-recruit.png" alt="">
+          <img src="../assets/img/recruit/title-recruit.png" alt="">
         </div>
         <div class="title-logo">
-          <img src="./assets/img/title-logo.png" alt="">
+          <img src="../assets/img/recruit/title-logo.png" alt="">
         </div>
 
       </div>
 
-      <div class="recruit" id="recruit">
+      <div class="lead recruit">
         <div class="container container--recruit">
           <p class="recruit__text font-size--M">
             太田市との協働で、弊社の資本を投入して交流物産館を建設し、さらに弊社が永年に亘って培った経験と技術、ノウハウを活用して管理運営することにより、地域交流や観光交流など市民の更なる賑わいと新たな雇用創出や消費の拡大など地域経済の活性化を図り太田市の発展のための一翼を担う事業です。
@@ -698,7 +698,7 @@
                 <div class="recruit-contact-info">
                   <div class="recruit-contact-info__mark">
                     <img
-                      src="./assets/img/mark-pin.png"
+                      src="../assets/img/recruit/mark-pin.png"
                       alt="住所"
                       class="recruit-contact-info__mark-img"
                     />
@@ -713,14 +713,13 @@
                 <div class="recruit-contact-info">
                   <div class="recruit-contact-info__mark">
                     <img
-                      src="./assets/img/mark-tel.png"
+                      src="../assets/img/recruit/mark-tel.png"
                       alt="電話番号"
                       class="recruit-contact-info__mark-img"
                     />
                   </div>
                   <div
-                    class="recruit-contact-info__text recruit-contact-info__text--tel fw--bold"
-                  >
+                    class="recruit-contact-info__text recruit-contact-info__text--tel fw--bold">
                     0276-30-3755
                   </div>
                 </div>
@@ -730,63 +729,52 @@
           <!--/.recruit-contact-->
         </div>
         <!--/.container-->
+                <div class="bottom">
+          <img class="bottom-picture" src="../assets/img/bottom-picture.png" alt="">
+        </div>
       </div>
       <!--/.recruit-->
 
       <footer class="footer">
-        
-        <img src="./assets/img/footer-img.png" alt="" class="footer__img" />
-        <small class="footer__copy-write font-size--S d-block"
-          >Copy right(c) Ota kitaibaraki kouryubussankan bus terminal station
-          all rights reserved.</small
-        >
+        <div class="nav inner">
+          <ul class="list container">
+            <li class="list-item text font-size--M"><a href="./">HOME</a></li>
+            <li class="list-item text font-size--M"><a href="./kouryubussankan">交流物産館ってなに？</a></li>
+            <li class="list-item text font-size--M"><a href="./newtopics">お知らせ・イベント情報</a></li>
+            <li class="list-item text font-size--M"><a href="./toretate">毎日獲れたて情報</a></li>
+            <li class="list-item text font-size--M"><a href="./shisetu_goannai">施設のご案内</a></li>
+            <li class="list-item text font-size--M"><a href="./access">交通・アクセス</a></li>
+          </ul>
+         </div>
+        <div class="info">            		
+          <div class="info__address">
+                    <a href="/"><img src="../assets/img/f_logo.png" alt="" class="f_logo"></a>	
+          <div class="text">
+              <span class="list-item  font-size--S">おおた･北茨城交流物産館バスターミナル駅</span><br>
+              <span class="list-item font-size--S">〒373-0817 太田市飯塚町 69番-3</span><br>
+              <span class="list-item font-size--S">管理運営会社：株式会社大雄建設</span>
+                </div>
+                
+          </div>
+          <div>
+            <ul class="list">
+              <li class="list-item text font-size--S"><a href="./privacypolicy">個人情報保護方針</a></li>
+              <li class="list-item text font-size--S"><a href="./recruit">採用情報</a></li>
+              <li class="list-item text font-size--S"><a href="./contact">お問い合わせ</a></li>
+            </ul>
+            <div class="tel text"><a href="tel:0276000000">TEL.<span class="list-item text font-size--LL">0276-00-0000</span></a></div>
+          </div>
+        </div>
+        <small class="footer__copy-write font-size--S d-block">Copy right(c) Ota kitaibaraki kouryubussankan bus terminal station all rights reserved.</small>
       </footer>
+
+        <a href="#" class="btn-back-to-top d-block" role="button">
+          <img src="../assets/img/btn_top.png" alt="上へ戻る" class="btn-back-to-top__img">
+        </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+    <script src="./assets/js/min.js" ></script>
     </div>
-    <!--/.whole-wrapper-->
-
-    <a href="#" class="btn-back-to-top d-block" role="button">
-      <img
-        src="./assets/img/btn_top.png"
-        alt="上へ戻る"
-        class="btn-back-to-top__img"
-      />
-    </a>
-
-    <!--js読み込み-->
-
-    <script>
-      //スムーススクロール
-      $(function () {
-        // #で始まるリンクをクリックしたら実行されます
-        $('a[href^="#"]').click(function () {
-          // スクロールの速度
-          var speed = 500; // ミリ秒で記述
-          var href = $(this).attr("href");
-          var target = $(href == "#" || href == "" ? "html" : href);
-          var position = target.offset().top;
-          $("body,html").animate({ scrollTop: position }, speed, "swing");
-          return false;
-        });
-      });
-    </script>
-
-    <script>
-      //上へ戻るボタンのクリック時
-      $(document).ready(function () {
-        var pagetop = $(".btn-back-to-top"); //class="btn-back-to-top" の部分をクリックしたとき、
-        $(window).scroll(function () {
-          if ($(this).scrollTop() > 100) {
-            pagetop.fadeIn();
-          } else {
-            pagetop.fadeOut();
-          }
-        });
-        pagetop.click(function () {
-          $("body, html").animate({ scrollTop: 0 }, 500); //500コマ=0.5秒かけてトップへ戻る。
-          return false;
-        });
-      });
-    </script>
-    <!--/js読み込み-->
-  </body>
+	</body>
 </html>
