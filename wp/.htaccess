@@ -1,0 +1,13 @@
+Options +SymLinksIfOwnerMatch
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /ota-kitaibaraki-kouryubussankan/wp/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /ota-kitaibaraki-kouryubussankan/wp/index.php [L]
+</IfModule>
+
+# END WordPress

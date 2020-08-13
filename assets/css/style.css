@@ -852,7 +852,8 @@ NEWSエリア ↓↓↓↓↓↓
     margin-top: 50px;
   }
   .topics-container .topics-container--img {
-    width: 68%;
+    width: 318px;
+    height: 202px;
     display: inline-block;
     padding: 5px 5px 5px 10px;
   }
