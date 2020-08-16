@@ -523,7 +523,7 @@
     </div>
 </section>
 
-<section class="topics syokuji">
+<section id="topics" class="topics syokuji">
     <h3><div class="title"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/syokuji/syokuji_title_02_text.png" alt="トピックス"></div></h3>
     <div class="inner">
         <div class="detail">

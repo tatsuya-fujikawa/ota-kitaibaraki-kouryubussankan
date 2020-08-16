@@ -64,7 +64,7 @@
         </ul>
     </div>
 </section>
-<section class="topics seika">
+<section id="topics" class="topics seika">
     <h3>
         <div class="title"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/seika/seika_title_02_text.png" alt="トピックス"></div>
     </h3>

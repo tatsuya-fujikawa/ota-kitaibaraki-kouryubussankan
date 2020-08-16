@@ -4,12 +4,12 @@
           <!-- ラッパーの（スライドを囲む） div 要素 -->
             <div class="swiper-wrapper"> 
             <!-- 各スライド div 要素 -->
-              <div class="swiper-slide"><a href="./"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide01.jpg" alt="おおた・北茨城交流物産館バスターミナル駅"></a></div>
-              <div class="swiper-slide"><a href="./kouryubussankan"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide02.jpg" alt="太田市に海がやってきた！"></a></div>
-              <div class="swiper-slide"><a href="./suisan"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide03.jpg" alt="みなとの魚"></a></div>
-              <div class="swiper-slide"><a href="./seika"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide04.jpg" alt="フレッシュベジフルおおた"></a></div>
-              <div class="swiper-slide"><a href="./syokuniku"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide05.jpg" alt="肉の駅おおた店"></a></div>
-              <div class="swiper-slide"><a href="./syokuji"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide06.jpg" alt="海鮮加一"></a></div>
+              <div class="swiper-slide"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide01.jpg" alt="おおた・北茨城交流物産館バスターミナル駅"></a></div>
+              <div class="swiper-slide"><a href="<?php echo home_url(); ?>/kouryubussankan/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide02.jpg" alt="太田市に海がやってきた！"></a></div>
+              <div class="swiper-slide"><a href="<?php echo home_url(); ?>/suisan"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide03.jpg" alt="みなとの魚"></a></div>
+              <div class="swiper-slide"><a href="<?php echo home_url(); ?>/seika"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide04.jpg" alt="フレッシュベジフルおおた"></a></div>
+              <div class="swiper-slide"><a href="<?php echo home_url(); ?>/syokuniku"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide05.jpg" alt="肉の駅おおた店"></a></div>
+              <div class="swiper-slide"><a href="<?php echo home_url(); ?>/syokuji"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide06.jpg" alt="海鮮加一"></a></div>
             </div>
               <!-- ページネーション -->
               <div class="swiper-pagination"></div>
@@ -21,11 +21,11 @@
         <div class="wrapper">
           <div class="btn-flex">
             <ul class="btn-flex--area">
-              <li class="btn-flex--item"><a href="./kouryubussankan/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/link-btn1.png" alt="交流物産館ってなに？"></a></li>
-              <li class="btn-flex--item"><a href="./suisan"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/link-btn2.png" alt="水産"></a></li>
-              <li class="btn-flex--item"><a href="./seika"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/link-btn3.png" alt="青果"></a></li>
-              <li class="btn-flex--item"><a href="./syokuniku"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/link-btn4.png" alt="食肉"></a></li>
-              <li class="btn-flex--item"><a href="./syokuji"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/link-btn5.png" alt="お食事"></a></li>
+              <li class="btn-flex--item"><a href="<?php echo home_url(); ?>/kouryubussankan/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/link-btn1.png" alt="交流物産館ってなに？"></a></li>
+              <li class="btn-flex--item"><a href="<?php echo home_url(); ?>/suisan/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/link-btn2.png" alt="水産"></a></li>
+              <li class="btn-flex--item"><a href="<?php echo home_url(); ?>/seika/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/link-btn3.png" alt="青果"></a></li>
+              <li class="btn-flex--item"><a href="<?php echo home_url(); ?>/syokuniku/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/link-btn4.png" alt="食肉"></a></li>
+              <li class="btn-flex--item"><a href="<?php echo home_url(); ?>/syokuji/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/link-btn5.png" alt="お食事"></a></li>
             </ul>
           </div>
         </div>
@@ -137,7 +137,7 @@
               <p><?php the_excerpt(); ?></p>
             </div>
             <div class="topics-container--btn btn-blue">
-              <a href="<?php the_permalink(); ?>">more</a>
+              <a href="<?php echo home_url(); ?>/suisan/#topics">more</a>
             </div>
           </div>
             <?php endwhile;
@@ -170,7 +170,7 @@
               <p><?php the_excerpt(); ?></p>
             </div>
             <div class="topics-container--btn btn-orange">
-              <a href="seika/">more</a>
+              <a href="<?php echo home_url(); ?>/seika/#topics">more</a>
             </div>
           </div>
           <?php endwhile;
@@ -202,7 +202,7 @@
               <p><?php the_excerpt(); ?></p>
             </div>
             <div class="topics-container--btn btn-orange">
-              <a href="<?php the_permalink(); ?>">more</a>
+              <a href="<?php echo home_url(); ?>/syokuniku/#topics">more</a>
             </div>
           </div>
           <?php endwhile;
@@ -233,7 +233,7 @@
               <p><?php the_excerpt(); ?></p>
             </div>
             <div class="topics-container--btn btn-violet">
-              <a href="<?php the_permalink(); ?>">more</a>
+              <a href="<?php echo home_url(); ?>/syokuji/#topics">more</a>
             </div>
           </div>
           <?php endwhile;

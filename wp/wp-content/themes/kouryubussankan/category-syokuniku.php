@@ -69,7 +69,7 @@
         </ul>
     </div>
 </section>
-<section class="topics syokuniku">
+<section id="topics" class="topics syokuniku">
     <h3><div class="title"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/syokuniku_title_02_text.png" alt="トピックス"></div></h3>
     <div class="inner">
         <div class="detail">

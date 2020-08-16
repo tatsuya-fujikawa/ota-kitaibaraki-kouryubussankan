@@ -67,7 +67,7 @@
         </ul>
     </div>
 </section>
-<section class="topics suisan">
+<section id="topics" class="topics suisan">
     <h3><div class="title"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/suisan/suisan_title_02_text.png" alt="トピックス"></div></h3>
     <div class="inner">
         <div class="detail">
