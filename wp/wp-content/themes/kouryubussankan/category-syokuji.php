@@ -1,63 +1,8 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="format-detection" content="email=no,telephone=no,address=no"> <!--自動リンク無効化-->
-	<title>おおた・北茨城交流物産館 バスターミナル駅 |【タイトル】</title>
-	<meta name="description" content="太田市の友好都市茨城県北茨城市やいわき市、日立市、豊洲の各市場から新鮮な魚介類を、毎日自社の冷凍車で集荷して太田市の皆様にいち早く提供します。">
-	<meta name="keywords" content="太田市,群馬県,水産物,魚介類,青果物,食肉,食事,新鮮,北茨城市,いわき市,日立市,豊洲,JA太田市,群馬県食肉卸売市場,海鮮丼加一,オープニングスタッフ募集,採用募集">
-	<link rel="stylesheet" href="../assets/css/reset.css">
-	<link rel="stylesheet" href="../assets/css/style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-46442257-1', 'daiyukensetsu.co.jp');
-  ga('send', 'pageview');
-
-</script>
-
-
-</head>
-<body>
-
-<div class="whole-wrapper syokuji">
-
-<header class="header">
-	<div class="header-top">
-	<div class="container container--header">
-		<h1 class="header-logo">
-			<a class="header-logo__link d-block"><img src="../assets/img/logo.png" alt="おおた・北茨城交流物産館 バスターミナル駅" class="header-logo__img"></a>
-		</h1>
-		<nav class="header-nav">
-			<ul class="header-nav__list fw--bold font-size--S">
-				<li class="header-nav__list-item nav-recruit"><a href="#recruit" class="header-nav__link">採用情報</a></li>
-				<li class="header-nav__list-item"><a href="#recruit-contact" class="header-nav__link">お問い合わせ</a></li>
-			</ul>
-		</nav>
-	</div>
-	</div>
-	<div class="header-nav2">
-          <ul class="header-nav2__list font-size--M">
-            <li class="header-nav2__list-item"><a href="#">HOME</a></li>
-            <li class="header-nav2__list-item"><a href="#">交流物産館ってなに？</a></li>
-            <li class="header-nav2__list-item"><a href="#">お知らせ・イベント情報</a></li>
-            <li class="header-nav2__list-item"><a href="#">毎日獲れたて情報</a></li>
-            <li class="header-nav2__list-item"><a href="#">施設のご案内</a></li>
-            <li class="header-nav2__list-item"><a href="#">交通・アクセス</a></li>
-          </ul>
-        </div>
-</header>
+<?php get_header(); ?>
 <div class="main-visual syokuji">
-        <h2><img src="../assets/img/syokuji/syokuji-logo.png" alt="フレッシュベジフルおおた"></h2>
+        <h2><img src="<?php echo get_template_directory_uri(); ?>/assets/img/syokuji/syokuji-logo.png" alt="フレッシュベジフルおおた"></h2>
         <div class="sub-visual">
-        <img src="../assets/img/syokuji/syokuji-top.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/syokuji/syokuji-top.png" alt="">
         </div>
 </div>
 
@@ -65,7 +10,7 @@
     <div class="inner">
         <p class="main-visual__description font-size--LL fw--bold">旬の味、自慢の<span class="col-yellow">まぐろ。</span><br>食材は<span class="col-yellow">新鮮</span>なものしか扱わず、<span class="col-yellow">旬のお料理</span>を楽しめるこだわりのお店です。<br><span class="col-yellow">絶品の味わい</span>をご賞味ください。</p>
         <figure>
-            <img src="../assets/img/syokuji/syokuji_lead_img.jpg" alt="" class="leadImage">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/syokuji/syokuji_lead_img.jpg" alt="" class="leadImage">
             <figcaption>
                 <p class="text font-size--L col-yellow">まぐろの目利き職人が厳選した極上のまぐろ専門店ならではの新鮮なまぐろをご堪能ください。</p>
                 <p class="text font-size--M">内陸県で味わう、厳選された当店自慢の本格まぐろ。お料理は旬の食材にこだわり、メイン料理からデザートまですべて手作りでご提供します。一度食べたら舌の記憶に残る上品な味を、ぜひ『加一』で。 </p>
@@ -75,12 +20,12 @@
 </section>
 <section class="menu syokuji"> <!--お品書き -->
     <div class="title"> 
-    <h3><img src="../assets/img/syokuji/syokuji_title_01_text.png" alt="おすすめ商品" class="ttl_text"></h3>
+    <h3><img src="<?php echo get_template_directory_uri(); ?>/assets/img/syokuji/syokuji_title_01_text.png" alt="おすすめ商品" class="ttl_text"></h3>
     </div>
     <div class="inner">
         <div class="flex pt50 pb50">
         <div class="table__box font-size--M">
-            <img src="../assets/img/syokuji/syokuji_img01.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/syokuji/syokuji_img01.jpg" alt="">
             <div class="table__box-text">
             <p class="table__box-title">丼ぶり</p>
             <table>
@@ -139,7 +84,7 @@
         </div>
 
         <div class="table__box font-size--M">
-            <img src="../assets/img/syokuji/syokuji_img02.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/syokuji/syokuji_img02.jpg" alt="">
             <div class="table__box-text">
             <p class="table__box-title">定食</p>
             <table>
@@ -213,7 +158,7 @@
         </div>
 
         <div class="table__box font-size--M">
-            <img src="../assets/img/syokuji/syokuji_img03.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/syokuji/syokuji_img03.jpg" alt="">
             <div class="table__box-text">
             <p class="table__box-title">寿司</p>
             <table>
@@ -252,7 +197,7 @@
         </div>
 
         <div class="table__box font-size--M">
-            <img src="../assets/img/syokuji/syokuji_img04.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/syokuji/syokuji_img04.jpg" alt="">
             <div class="table__box-text">
             <p class="table__box-title">お子様メニュー</p>
             <table>
@@ -277,7 +222,7 @@
         </div>
 
         <div class="table__box font-size--M">
-            <img src="../assets/img/syokuji/syokuji_img05.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/syokuji/syokuji_img05.jpg" alt="">
             <div class="table__box-text">
             <p class="table__box-title">刺身・盛合</p>
             <table>
@@ -336,7 +281,7 @@
         </div>
 
         <div class="table__box font-size--M">
-            <img src="../assets/img/syokuji/syokuji_img06.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/syokuji/syokuji_img06.jpg" alt="">
             <div class="table__box-text">
             <p class="table__box-title">サラダ</p>
             <table>
@@ -579,78 +524,32 @@
 </section>
 
 <section class="topics syokuji">
-    <h3><div class="title"><img src="../assets/img/syokuji/syokuji_title_02_text.png" alt="トピックス"></div></h3>
+    <h3><div class="title"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/syokuji/syokuji_title_02_text.png" alt="トピックス"></div></h3>
     <div class="inner">
         <div class="detail">
             <ul class="list">
-                <li class="list__item">
-                    <dl>
-                        <dt class="text font-size--LL"><h3>今が旬！キラキラ輝く夏野菜多数入荷しました。</h3></dt>
-                        <time class="text font-size--S">2020.09.01</time>
-                        <img src="../assets/img/syokuji/syokuji_img07.jpg" alt="" class="list__img">
-                        <dd class="text font-size--M">梅雨の雨をたっぷり吸って、太陽をしっかり浴びた夏野菜はこの時期だけの贅沢ですよね。今夜の食卓に夏の恵みを取り入れてはいかがでしょうか。</dd>
-                    </dl>
-                </li>
-                <li class="list__item">
-                    <dl>
-                        <dt class="text font-size--LL"><h3>タイトルが入ります</h3></dt>
-                        <time class="text font-size--S">2020.09.01</time>
-                        <img src="../assets/img/syokuji/syokuji_img08.jpg" alt="" class="list__img">
-                        <dd class="text font-size--M">説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります</dd>
-                    </dl>
-                </li>
+            <?php if (have_posts()) : ?>
+                    <?php while (have_posts()) : the_post(); ?>
+                        <li class="list__item">
+                            <dl>
+                                <dt class="text font-size--LL">
+                                    <h3><?php the_title(); ?></h3>
+                                </dt>
+                                <time datetime="<?php the_time('Y-m-d'); ?>" class="text font-size--S"><?php the_time('Y.m.d'); ?></time>
+                                <?php the_post_thumbnail(); ?>
+                                <dd class="text font-size--M"><?php the_content(); ?></dd>
+                            </dl>
+                        </li>
+                    <?php endwhile; ?>
+                <?php endif; ?>l>
             </ul>
         </div>
         <div class="category">
             <ul class="list flex">
-                <li class="list__item font-size--LL"><a href="">水産</a></li>
-                <li class="list__item font-size--LL"><a href="">青果</a></li>
-                <li class="list__item font-size--LL"><a href="">食肉</a></li> 
+                <li class="list__item font-size--LL"><a href="../suisan/">水産</a></li>
+                <li class="list__item font-size--LL"><a href="../seika/">青果</a></li>
+                <li class="list__item font-size--LL"><a href="../syokuniku">食肉</a></li> 
             </ul>
         </div>
     </div>
-    <div class="bottom">
-        <img class="bottom-picture" src="../assets/img/bottom-picture.png" alt="">
-    </div>
-</section>
-<footer class="footer">
-		<div class="nav inner">
-			<ul class="list container">
-			  <li class="list-item text font-size--M"><a href="#">HOME</a></li>
-			  <li class="list-item text font-size--M"><a href="#">交流物産館ってなに？</a></li>
-			  <li class="list-item text font-size--M"><a href="#">お知らせ・イベント情報</a></li>
-			  <li class="list-item text font-size--M"><a href="#">毎日獲れたて情報</a></li>
-			  <li class="list-item text font-size--M"><a href="#">施設のご案内</a></li>
-			  <li class="list-item text font-size--M"><a href="#">交通・アクセス</a></li>
-			</ul>
-		 </div>
-		<div class="info">
-			<div class="info__address">
-                <a href="/"><img src="../assets/img/f_logo.png" alt="" class="f_logo"></a>	
-			<div class="text">
-					<span class="list-item  font-size--S">おおた･北茨城交流物産館バスターミナル駅</span><br>
-					<span class="list-item font-size--S">〒373-0817 太田市飯塚町 69番-3</span><br>
-					<span class="list-item font-size--S">管理運営会社：株式会社大雄建設</span>
-        </div>
-			</div>
-			<div>
-				<ul class="list">
-					<li class="list-item text font-size--S"><a href="#">個人情報保護方針</a></li>
-					<li class="list-item text font-size--S"><a href="#">採用情報</a></li>
-					<li class="list-item text font-size--S"><a href="#">お問い合わせ</a></li>
-				</ul>
-				<div class="tel text"><a href="tel:0276000000">TEL.<span class="list-item text font-size--LL">0276-00-0000</span></a></div>
-			</div>
-		</div>
-		<small class="footer__copy-write font-size--S d-block">Copy right(c) Ota kitaibaraki kouryubussankan bus terminal station all rights reserved.</small>
-</footer>
-
-</div> <!--/.whole-wrapper-->
-
-
-<a href="#" class="btn-back-to-top d-block" role="button">
-	<img src="../assets/img/btn_top.png" alt="上へ戻る" class="btn-back-to-top__img">
-</a>
-
-</body>
-</html>
+<?php get_footer(); ?>

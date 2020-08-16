@@ -2757,6 +2757,10 @@ section.recommend {
   background-image: url("../img/icon_04.png");
 }
 
+.topics.syokuji .list .list__item img {
+  height: 350px;
+}
+
 .menu.syokuji .table__box img {
   margin: 0 auto;
 }

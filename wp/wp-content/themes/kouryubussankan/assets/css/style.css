@@ -2763,6 +2763,10 @@ section.recommend {
   width: 105px;
 }
 
+.topics.syokuji .list .list__item img {
+  max-height: 300px;
+}
+
 .topics.syokuji .category .list .list__item:nth-child(3) a:before {
   background-image: url("../img/icon_04.png");
 }
@@ -2834,6 +2838,7 @@ section.recommend {
   .topics.syokuji .list .list__item img {
     max-width: 50%;
     margin: 0 auto 15px;
+    max-height: 350px;
   }
   .topics.syokuji .list .list__item .text {
     line-height: 1.8;

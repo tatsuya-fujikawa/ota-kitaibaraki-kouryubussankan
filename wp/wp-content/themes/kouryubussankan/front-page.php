@@ -170,7 +170,7 @@
               <p><?php the_excerpt(); ?></p>
             </div>
             <div class="topics-container--btn btn-orange">
-              <a href="<?php the_permalink(); ?>">more</a>
+              <a href="seika/">more</a>
             </div>
           </div>
           <?php endwhile;

@@ -2837,7 +2837,7 @@ section.recommend{
 }
 
 .topics.syokuji{
-  margin-bottom: 0;;
+  margin-bottom: 0;
   .title{
     content: ''; 
   width: 100%;
@@ -2855,6 +2855,10 @@ section.recommend{
   .category .list .list__item:nth-child(3) a:before {
     background-image: url('../img/icon_04.png');
   }
+}
+
+.topics.syokuji .list .list__item img {
+  height: 350px;
 }
 
 .menu.syokuji .table__box {
