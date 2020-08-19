@@ -31,10 +31,10 @@
               <li class="list-item text font-size--S"><a href="<?php echo home_url(); ?>/recruit">採用情報</a></li>
               <li class="list-item text font-size--S"><a href="<?php echo home_url(); ?>/contact">お問い合わせ</a></li>
             </ul>
-            <div class="tel text"><a href="tel:0276000000">TEL.<span class="list-item text font-size--LL">0276-00-0000</span></a></div>
+            <div class="tel text"><a href="tel:0276000000"><span class="font-size--L">TEL.</span><span class="list-item text font-size--LL">0276-00-0000</span></a></div>
           </div>
         </div>
-        <small class="footer__copy-write font-size--S d-block" style="width: 100%;">Copy right(c) Ota kitaibaraki kouryubussankan bus terminal station all rights reserved.</small>
+        <small class="footer__copy-write d-block" style="width: 100%;">Copy right(c) Ota kitaibaraki kouryubussankan bus terminal station all rights reserved.</small>
     </footer>
 
     <a href="#" class="btn-back-to-top d-block" role="button">

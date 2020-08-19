@@ -7,31 +7,9 @@
 
 <div class="form-area contact">
   <div class="inner">
-<form action="#" method="post">
-  <div class="item">
-  <label class="label must" for="name">お名前</label>
-  <input class="inputs" id="name" type="text" name="name">
-  </div>
-  <div class="item">
-  <label class="label must" for="mail">メールアドレス</label>
-  <input class="inputs email" id="mail" type="email" name="mail">
-  </div>
-  <div class="item">
-  <label class="label" for="tel">電話番号</label>
-  <input class="inputs" id="tel" type="number" name="tel">
-  </div>
-  <div class="item">
-  <label class="label" for="subject">件名</label>
-  <input class="inputs subject" id="subject" type="text" name="subject">
-  </div>
-  <div class="item">
-  <label class="label label-comment" for="comment">メッセージ本文</label>
-  <textarea class="inputs" name="comment" id="comment" cols="80" rows="10"></textarea>
-  </div>
-
-  <input type="submit" value="送信する">
-
-</form>
+<!-- <form action="<?php echo get_the_permalink(); ?>" method="post"> -->
+<?php echo do_shortcode('[contact-form-7 id="86" title="お問い合わせ"]'); ?>
+<!-- </form> -->
 </div>
 </div>
 

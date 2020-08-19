@@ -63,17 +63,17 @@
           <nav class="header-nav">
             <ul class="header-nav__list fw--bold font-size--S">
               <li class="header-nav__list-item nav-recruit">
-                <a href="./recruit" class="header-nav__link">採用情報</a>
+                <a href="<?php echo home_url(); ?>/recruit" class="header-nav__link">採用情報</a>
               </li>
               <li class="header-nav__list-item">
-                <a href="./contact" class="header-nav__link"
+                <a href="<?php echo home_url(); ?>/contact" class="header-nav__link"
                   >お問い合わせ</a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
-        <div class="header-nav2">
+        <div class="header-nav2 sp-none">
           <ul class="header-nav2__list font-size--M">
             <li class="header-nav2__list-item"><a href="<?php echo home_url(); ?>">HOME</a></li>
             <li class="header-nav2__list-item"><a href="<?php echo home_url(); ?>/kouryubussankan">交流物産館ってなに？</a></li>

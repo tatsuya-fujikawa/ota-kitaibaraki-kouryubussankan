@@ -42,8 +42,8 @@
 
 <div class="button-area kouryubussankan">
 	<div class="inner flex-wrapper">
-		<div class="button font-size--LL flex-item"><a href="">施設のご案内</a></div>
-		<div class="button button-access font-size--LL flex-item"><a href="">交通・アクセス</a></div>
+		<div class="button font-size--LL flex-item"><a href="<?php echo home_url(); ?>/sisetu_goannai/">施設のご案内</a></div>
+		<div class="button button-access font-size--LL flex-item"><a href="<?php echo home_url(); ?>/access/">交通・アクセス</a></div>
 	</div>
 </div>
 
